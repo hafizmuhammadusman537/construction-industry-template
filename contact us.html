@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css" rel="stylesheet">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!-- Header-footer loading script -->
+    <script src="js/header-footer-load.js"></script>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="fonts/fontawesome-free-5.2.0-web/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
+    <!-- style -->
+    <link rel="stylesheet" href="css/contact us.css">
+</head>
+<!-- end of head  -->
+
+<body>
+    <!-- load footer section -->
+    <div id="load-header"></div>
+
+    <section class="jumbotron header__sec__bg">
+        <div class="container container__wraper text__visible">
+            <h1 class="text-white">Contact Us</h1>
+        </div>
+    </section>
+    <div class="container container__wraper paging">
+        <span><a href="">Home</a></span>
+        <span class="active__pg"><i class="fa fa-arrow-right"></i><a href="">Contact Us</a></span>
+    </div>
+    <hr>
+    <!-- Countries Section -->
+    <section class="container container__wraper">
+        <div class="text-center countries__section__header">
+            <h1>Get In Touch!</h1>
+            <p class="paragraph__size paragraph__color">Nulla vehicula sapien nec ante sollicitudin luctus. Duis
+                posuere, metus eget<br>
+                mollis, dolor convallis nulla, ut aliquam nisi lorem eget enim.
+            </p>
+        </div>
+        <!-- countries tab -->
+        <div class="contact_us">
+            <ul data-tabs="" class="tab_navigation row">
+                <li class="col-md-2"><a href="#tab-0" data-tab="" class="tab_navigation--link -active"><span
+                            class="tab_navigation--link_text"><span class="line"></span>United States</span></a></li>
+                <li class="col-md-2"><a href="#tab-1" data-tab="" class="tab_navigation--link "><span
+                            class="tab_navigation--link_text"><span class="line"></span>France</span></a></li>
+                <li class="col-md-2"><a href="#tab-2" data-tab="" class="tab_navigation--link "><span
+                            class="tab_navigation--link_text"><span class="line"></span>Germany</span></a></li>
+                <li class="col-md-2"><a href="#tab-3" data-tab="" class="tab_navigation--link "><span
+                            class="tab_navigation--link_text"><span class="line"></span>India</span></a></li>
+                <li class="col-md-2"><a href="#tab-4" data-tab="" class="tab_navigation--link "><span
+                            class="tab_navigation--link_text"><span class="line"></span>Turkey</span></a></li>
+                <li class="col-md-2"><a href="#tab-5" data-tab="" class="tab_navigation--link "><span
+                            class="tab_navigation--link_text"><span class="line"></span>Japan</span></a></li>
+            </ul>
+        </div>
+        <!-- countries tab -->
+        <div class="container container__wraper">
+            <div class="row mb-5">
+                <div class="col-md-5 col-sm-12 col-xs-10">
+
+                </div>
+                <div class="col-md-7 col-xs-12">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6 m-0">
+                                <label for="fullname"></label>
+                                <input type="text" class="form-control form-control-lg" id="fullname"
+                                    placeholder="Full Name">
+                            </div>
+                            <div class="form-group col-md-6 m-0">
+                                <label for="inputEmail4"></label>
+                                <input type="email" class="form-control form-control-lg" id="inputEmail4"
+                                    placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6 m-0">
+                                <label for="phone"></label>
+                                <input type="text" class="form-control form-control-lg" id="phone" placeholder="Phone">
+                            </div>
+                            <div class="form-group col-md-6 m-0">
+                                <label for="inputState"></label>
+                                <select id="inputState" class="form-control form-control-lg">
+                                    <option value="" selected class="select__option">Service 1</option>
+                                    <option value="1">Service 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12 col-xs-12">
+                                <label for="exampleFormControlTextarea1"></label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" cols="30" rows="5"
+                                    placeholder="Type Here..."></textarea>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-9 col-xs-12 mt-2">
+                                <div class="float-left custom__file__upload">
+                                    <label>
+                                        <input type="file" name="file-60" size="40"
+                                            accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx,.odt,.avi,.ogg,.m4a,.mov,.mp3,.mp4,.mpg,.wav,.wmv"
+                                            aria-invalid="false"><span>Attach File</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-xs-12 mt-2">
+                                <div class="float-md-right"><input type="submit" value="Send Request" class="btn"><span
+                                        class="ajax-loader"></span></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Countries Section -->
+    <div id="accordion" class="map">
+        <div class="card border-0">
+            <div class="card-header text-center border-0 rounded-0 p-3">
+                <span class="cursor_pointer" data-toggle="collapse" href="#collapseOne">
+                    ShowMap
+                </span>
+            </div>
+            <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                <div class="card-body p-0 border-0" style="margin-bottom: -0.5em;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7050661.956303704!2d69.34807160000001!3d30.3593034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1588186371909!5m2!1sen!2s"
+                        style="width:100%;height:410px;" width="100" height="450" frameborder="0" style="border:0;"
+                        allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Load Footer -->
+    <div id="load-footer" class=""></div>
+
+</body>
+
+</html>

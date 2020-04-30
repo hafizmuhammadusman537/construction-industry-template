@@ -1,0 +1,753 @@
+/* CSS Document */
+
+/*------------------------------------------------------------------
+/*--------------------------------------------------------*/
+
+/* TABLE OF CONTENTS: */
+
+/*--------------------------------------------------------*/
+
+/* 01 - STYLES INIT */
+
+/* 02 - HEADER */
+
+/* 03 - COMPANY SECTIION  */
+
+/* 04 - MISSION SECTIION  */
+
+/* 05 - TEAM SECTIION  */
+
+/* 06 - PROMO SECTION */
+
+/* 07 - FOOTER */
+
+/*------------------------------------------------------*/
+
+/*---------------------- 01. STYLES INIT----------------------*/
+
+:root {
+    --primary-color: #ff5e14;
+    --secondary-color: rgba(255, 94, 20, 0.8);
+    ;
+    --main-txt-color: #ffffff;
+    --primary--text--color: #262626;
+}
+
+html, body {
+    font-family: Roboto;
+    font-weight: 400;
+}
+
+h1 {
+    color: var(--primary--text--color);
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.paragraph__size {
+    font-size: 20px;
+}
+
+.paragraph__color {
+    color: var(--primary--text--color);
+    opacity: 0.6;
+}
+
+.position__relative {
+    position: relative;
+}
+
+@media (min-width: 576px) {
+    .container__wraper {
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.cursor_pointer {
+    cursor: pointer;
+}
+
+/* Typography */
+
+.media i, .learn__more {
+    color: var(--primary-color);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/*---------------------- 02. HEADER----------------------*/
+
+.topbar {
+    background: #f3f3f3;
+    padding-top: 0.25rem;
+    padding-right: 0
+}
+
+.nav__bar {
+    width: 100%;
+    float: left;
+}
+
+.navbar__wrapper {
+    padding: 20px 10px;
+}
+
+.nav__social__icon {
+    font-size: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.topbar, .nav__social__icon {
+    color: #b5b5b5;
+}
+
+.nav__social__icon:hover {
+    color: #b5b5b5;
+    opacity: 0.3;
+}
+
+.brand__logo .navbar-brand {
+    padding: 0;
+    margin: 0;
+}
+
+.nav__collaps {
+    width: 80%;
+    float: left;
+}
+
+.follow__us {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.language_selector {
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 7px;
+}
+
+.language_selector--icon {
+    font-size: 18px;
+}
+
+.language_selector_opacity {
+    opacity: 0.4;
+}
+
+.side_nav_item_opacity {
+    opacity: 0.4;
+}
+
+.side_nav_social_icon_opacity {
+    opacity: 0.5;
+}
+
+.side_nav_social_icon_opacity i:hover {
+    opacity: 0.2;
+}
+
+.menu__item {
+    color: var(--primary--text--color) !important;
+    padding: 5px 0 !important;
+    margin-left: 30px;
+}
+
+.menu__item:hover {
+    color: var(--primary-color) !important;
+}
+
+.brand__logo {
+    width: 20%;
+    padding: 8px 0px;
+    float: left;
+}
+
+@media (max-width: 1200px) {
+    .brand__logo {
+        width: 100% !important;
+        text-align: center;
+    }
+    .nav__collaps {
+        width: 100%;
+    }
+    div#collaps__navbar ul {
+        margin: auto;
+    }
+}
+
+.hover_dropdown .dropdown-item {
+    font-size: 16px;
+    font-weight: 400px;
+    color: var(--primary--text--color);
+}
+
+.hover_dropdown .dropdown-item:hover, .hover_dropdown .dropdown-item:focus, .hover_dropdown .dropdown-item:active {
+    background-color: #ffffff;
+}
+
+.hover_dropdown::before {
+    display: block;
+    width: 100%;
+    height: 10px;
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    margin: 0 0 1px;
+}
+
+.hover_dropdown {
+    top: 124%;
+}
+
+.btn__menu .fa {
+    color: var(--primary--text--color);
+    font-size: 28px;
+}
+
+@media (min-width: 992px) {
+    /* make menu dropdown on hover */
+    .dropdown:hover>.hover_dropdown {
+        display: block !important;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 992px) {
+    .menu-item-notify {
+        display: none;
+    }
+    .menu__item {
+        margin: 0;
+        color: #fff !important;
+        padding: 17px 20px !important;
+    }
+    .menu__item:hover {
+        color: #fff !important;
+    }
+    /* Side Navbar on small screen */
+    .nav__collaps {
+        overflow-y: auto;
+        position: fixed;
+        top: 0px;
+        width: 320px !important;
+        z-index: 99;
+        background: var(--primary--text--color);
+        left: 0px;
+        height: 100%;
+    }
+    /* Add top padding on side navbar for close icon */
+    .nav__collaps .navbar-nav {
+        padding-top: 40px;
+    }
+    /* Dropdwon box styling on side navbar */
+    .hover_dropdown {
+        background-color: transparent;
+        border: 0 !important;
+        padding: 0px 0px;
+        margin: 0;
+    }
+    /* Dropdwon items styling on side navbar */
+    .hover_dropdown .dropdown-item {
+        color: #fff !important;
+        font-size: 16px !important;
+        font-weight: bold;
+        border-top: 1px solid #ffffff1a;
+        padding: 17px 20px 17px 40px !important;
+        line-height: 15px;
+    }
+    /* Dropdwon items styling on side navbar on hover  */
+    .hover_dropdown .dropdown-item:hover, .hover_dropdown .dropdown-item:focus, .hover_dropdown .dropdown-item:active {
+        background: var(--primary--text--color);
+        color: #fff;
+    }
+    /* Navigation options styling on side navbar */
+    .nav__collaps .nav-itme {
+        border-top: 1px solid #ffffff1a;
+        line-height: 15px;
+    }
+    .fa-angle-right__arrow {
+        float: right;
+        font-size: 12px;
+        opacity: 1;
+    }
+    .fa-angle-right__arrow:before {
+        content: "\f105";
+    }
+    .fa-angle-down__arrow:before {
+        content: "\f107";
+    }
+    .fa-caret-right__caret {
+        float: right;
+        font-size: 12px;
+        opacity: 0.4;
+    }
+    .fa-caret-right__caret:before {
+        content: "\f0da";
+    }
+    .fa-caret-down__caret:before {
+        content: "\f0d7";
+    }
+    .activeButton:before {
+        position: fixed;
+        z-index: 100 !important;
+        left: 270px !important;
+        top: 8px !important;
+        content: "\f00d" !important;
+        color: #fff;
+        font-size: 25px;
+    }
+    .btn__menu {
+        position: absolute;
+        left: 6px;
+        top: 25px;
+        border: 0;
+    }
+}
+
+/* ====================================
+Dropdown Services on navigation bar
+======================================= */
+
+.dropdown__services {
+    position: absolute;
+    top: 113%;
+    left: 50%;
+    z-index: 1000;
+    display: none;
+    padding: 0.5rem 25px;
+    font-size: 1rem;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #00000026;
+    border-radius: 0.25rem;
+    width: 950px;
+    transform: translate(-19%, 0);
+    padding-top: 10px;
+}
+
+.service__item_title {
+    color: var(--primary--text--color);
+    font-size: 15px;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.service__item_detail {
+    color: #969696;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 13px;
+    text-overflow: ellipsis;
+}
+
+.service__item_icon {
+    color: var(--primary-color);
+    font-size: 38px;
+    margin-right: 24px;
+    float: left;
+}
+
+.service__item_link {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    height: 100%;
+}
+
+.service__item_link:hover {
+    background: #F7F7F7;
+    border-radius: 3px;
+}
+
+/* ==================================
+end of Dropdown Services on navigation bar
+================================== */
+
+.menu-item-notify {
+    white-space: nowrap;
+    font-size: 9px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 77%;
+    left: 101%;
+    margin: -1px 0 0 -14px;
+    background: #fff;
+    border-radius: 5px;
+    padding: 0px 4px;
+    border: 2px solid;
+    color: var(--primary-color);
+}
+
+.fa-arrow-right_top_nav {
+    color: white;
+    font-weight: 0;
+    margin: 5px 0px 0px 10px;
+    font-size: 12px;
+}
+
+.nav_button {
+    border: 0px;
+    border-radius: 0PX;
+    padding: 9px 16px;
+    background: var(--primary-color);
+    color: var(--main-txt-color);
+}
+
+.nav_button:hover {
+    background: var(--secondary-color);
+}
+
+.header__sec__bg {
+    background-image: url('../img/teambg.jpg');
+    width: 100%;
+    height: 40%;
+    height: 350px;
+    margin: 0;
+    position: relative;
+    border-radius: 0;
+}
+
+.header__sec__bg::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.6;
+    top: 0;
+    right: 0;
+}
+
+.header__sec__bg .text__visible {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    top: 35%;
+}
+
+.paging {
+    width: 100%;
+    height: 2.5rem;
+    background-color: #ffffff;
+}
+
+.paging a {
+    color: var(--primary--text--color);
+    display: inline-block;
+    padding: 16px 0;
+}
+
+.paging .active__pg i {
+    padding: 0 10px;
+    color: #bdbdbd;
+    font-size: 12px;
+}
+
+.paging .active__pg a {
+    color: var(--primary-color);
+}
+
+/*---------------------- 03. COMPANY SECTIION----------------------*/
+
+.company__section {
+    padding: 4rem 0;
+}
+
+.company__section .our_company_text {
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.our_company--quote_media img {
+    width: 100%;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+.our_company--quote_media {
+    position: relative;
+}
+
+.our_company--quote_text {
+    position: relative;
+    font-size: 16px;
+    color: #969696;
+    line-height: 23px;
+    font-style: italic;
+    padding: 45px 0 0;
+    margin: 0;
+}
+
+.our_company--quote_text i {
+    position: absolute;
+    display: inline-block;
+    line-height: 1;
+    text-decoration: inherit;
+    text-rendering: optimizeLegibility;
+    text-transform: none;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    top: -5px;
+    left: -3px;
+    font-size: 32px;
+    color: #ff5e14;
+}
+
+.our_company--quote_author {
+    position: relative;
+}
+
+.our_company--quote_author strong {
+    display: block;
+    padding: 18px 0 0;
+}
+
+.our_company--quote_author span {
+    padding: 0 0 0;
+    display: block;
+    font-size: 14px;
+    color: #969696;
+    margin: 0;
+}
+
+.our_company--text h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 13px;
+}
+
+.our_company--text {
+    position: relative;
+    padding: 4px 45px 0 0;
+}
+
+@media (max-width: 992px) {
+    .our_company--text {
+        margin-bottom: 20px;
+        padding: 0;
+    }
+}
+
+/*---------------------- 04. MISSION SECTION----------------------*/
+
+.mission__section {
+    background-color: #f0f0f0;
+    border-radius: 0;
+    padding: 5rem 0;
+}
+
+.mission__section .card {
+    background-color: transparent;
+}
+
+.mission__section .row {
+    margin-top: 6rem;
+}
+
+.our_company--text h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0 13px;
+}
+
+.our_company--text p:first-of-type {
+    margin-top: 0;
+}
+
+.our_company--text p {
+    font-size: 16px;
+    color: #969696;
+    line-height: 23px;
+    margin: 15px 0 0;
+}
+
+.mission__section .card img {
+    margin-bottom: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.our_company--text ul {
+    padding-top: 13px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.our_company--text ul li:first-child {
+    margin-right: 14px;
+}
+
+.our_company--text ul li {
+    position: relative;
+    margin: 7px 0 0;
+    padding: 0 0 0 0px;
+    color: #969696;
+}
+
+.our_company--text ul li i {
+    position: relative;
+    margin-right: 14px;
+    color: var(--primary-color);
+    font-size: 8px;
+}
+
+/*---------------------- 04. TEAM SECTION----------------------*/
+
+.team__section .container {
+    padding-top: 4rem;
+    padding-bottom: 4.5rem;
+}
+
+.team__section {
+    background-image: url('../img/iStock_539356314.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    border-radius: 0;
+}
+
+.team__section::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.7;
+    top: 0;
+    right: 0;
+}
+
+.team__section .text__visible {
+    position: relative;
+    color: #fff;
+}
+
+.team_member {
+    position: relative;
+    background: #202223;
+    margin: 30px 0 0;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 1px 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 0px;
+    border: 0px;
+}
+
+.team_member--body {
+    padding: 25px;
+}
+
+.team_member img {
+    border-radius: 0;
+}
+
+.team_member--name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff !important;
+}
+
+.team_member--position {
+    display: block;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    line-height: 23px;
+    margin: 10px 0 0;
+}
+
+.team_member--email {
+    display: block;
+    margin: 8px 0 0;
+}
+
+.team_member--email a {
+    color: var(--primary-color);
+    -webkit-transition: .2s ease;
+    transition: .2s ease;
+}
+
+.team_member--email a:hover {
+    opacity: 0.85;
+}
+
+.card .team_member--links {
+    margin: 22px 0 0;
+    list-style: none;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.card .team_member--links li {
+    display: inline;
+}
+
+.team_member--links li a:hover span {
+    color: var(--primary-color);
+}
+
+.card .team_member--links li a {
+    color: rgba(255, 255, 255, 0.5);
+    padding: 5px;
+}
+
+/*---------------------- 06. FOOTER----------------------*/
+
+.contact__section {
+    padding: 20px 0;
+    background-color: var(--primary-color);
+}
+
+.contact__section i {
+    margin: 10px 20px;
+    font-size: 30px;
+    float: left;
+}
+
+.contact__section span {
+    font-size: 17px;
+}
+
+.contact__section b {
+    font-size: 19px;
+}
+
+.rotate__icon {
+    transform: rotate(100deg);
+}
+
+@media (max-width: 992px) {
+    .contact__style {
+        width: 300px;
+        margin: 0 auto;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+.main__footer {
+    width: 100%;
+    height: 4rem;
+    background-color: #313131;
+    color: #ffffff;
+    display: flex;
+}
+
+.main__footer span {
+    margin: auto;
+    opacity: 0.5;
+}
