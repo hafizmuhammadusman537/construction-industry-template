@@ -400,7 +400,6 @@ end of Dropdown Services on navigation bar
 
 .fa-arrow-right_top_nav {
     color: white;
-    font-weight: 0;
     margin: 5px 0px 0px 10px;
 }
 
@@ -660,7 +659,7 @@ end of Dropdown Services on navigation bar
 }
 
 .pricing_plan--header {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 700;
     color: var(--primary-color);
     padding: 20px 0 30px;
