@@ -380,4 +380,5 @@ end of Dropdown Services on navigation bar
 
 .nav_button:hover {
     background-color: var(--secondary-color);
+    color: var(--main-txt-color);
 }
