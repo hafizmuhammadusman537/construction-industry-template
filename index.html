@@ -501,7 +501,14 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <!-- Header-footer loading script -->
-    <script src="js/header-footer-load.js"></script>
+    <!-- <script src="js/header-footer-load.js"></script> -->
+
+    <script>
+        $(document).ready(function () {
+            $("#load-header").load("../header.html");
+            $("#load-footer").load("../footer.html");
+        });
+    </script>
 
 </body>
 
